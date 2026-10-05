@@ -3,6 +3,7 @@
 // Variables: $title, $nav ('home' | 'wall' | 'notifications' | null), $content.
 
 // If the database is down, still render the page (e.g. the 500 page) without a user.
+<?php broken(
 try {
     $user = current_user();
 } catch (Throwable $e) {
